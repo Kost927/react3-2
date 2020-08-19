@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from './Searchbar.module.css'
+import styles from "./Searchbar.module.css";
 
 class Searchbar extends Component {
   state = {
@@ -8,13 +8,12 @@ class Searchbar extends Component {
 
   handleInputSearch = e => {
     this.setState({ inputValue: e.target.value });
-    
   };
 
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSubmit(this.state.inputValue);
-    this.setState({ inputValue: ''});
+    this.setState({ inputValue: "" });
   };
 
   render() {

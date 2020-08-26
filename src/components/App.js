@@ -49,7 +49,7 @@ class App extends Component {
 
   handleSearchSormSubmit = query => {
     this.setState({ searchQuery: query });
-    this.setState({gallery: []});
+    this.setState({gallery: [], page: 1});
   };
 
   openModalFn = image => {
